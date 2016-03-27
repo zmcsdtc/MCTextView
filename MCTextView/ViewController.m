@@ -24,6 +24,8 @@
     textview.font=[UIFont systemFontOfSize:80];
     textview.maxHeight=200;
     textview.placeholerColor=[UIColor lightGrayColor];
+    
+    textview.placeholderEditColor=[UIColor cyanColor];
     textview.textColor=[UIColor orangeColor];
     self.tv=textview;
     

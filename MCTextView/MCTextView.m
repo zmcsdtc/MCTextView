@@ -98,7 +98,9 @@
 - (void) setTextColor:(UIColor *)textColor{
     [super setTextColor:textColor];
     self.tintColor=textColor;
-    self.placeholderEditColor=textColor;
+    if (!self.placeholderEditColor) {
+        self.placeholderEditColor=textColor;
+    }
 }
 
 -(BOOL)resignFirstResponder{
