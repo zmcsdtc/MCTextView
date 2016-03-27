@@ -9,8 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface MCTextView : UITextView
-
+/**
+ *  placeholder文字
+ */
 @property(copy,nonatomic)NSString*placeholder;
+/**
+ *  提示文字的颜色
+ */
+@property(strong,nonatomic)UIColor*placeholerColor;
+
+@property(strong,nonatomic)UIColor *placeholderEditColor;
+
 /**
  *  最大高度-不设置的话就无最大高度
  */

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "MCTextView.h"
 @interface ViewController ()
-
+@property(strong,nonatomic)MCTextView*tv;
 @end
 
 @implementation ViewController
@@ -23,7 +23,13 @@
     [self.view addSubview:textview];
     textview.font=[UIFont systemFontOfSize:80];
     textview.maxHeight=200;
+    textview.placeholerColor=[UIColor lightGrayColor];
+    textview.textColor=[UIColor orangeColor];
+    self.tv=textview;
     
+}
+- (void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.tv resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
